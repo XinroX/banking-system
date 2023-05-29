@@ -37,4 +37,11 @@ void HTTPHeader::ConfigureHeader(const std::string& header_buf) {
     
 }
 
+HTTPMethod HTTPHeader::GetMethod() const{
+    return m_method;
+}
+const std::string& HTTPHeader::GetUri() const {
+    return m_uri;
+}
+
 } // namespace http;

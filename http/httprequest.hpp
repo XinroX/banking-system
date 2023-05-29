@@ -8,7 +8,7 @@
 namespace http {
 class HTTPRequest : public IHTTPRequest {
     friend class Container;
-private:
+public:
     HTTPRequest(std::unique_ptr<IHTTPHeader> header) : m_header(std::move(header))
     {}
 public:

@@ -9,6 +9,7 @@ class IHTTPResponse {
 public:
     virtual void ConfigureResponse(const int status_code, const std::string& body) = 0;
     virtual std::string GenerateResponse() const = 0;
+    virtual ~IHTTPResponse(){}
 };
 
 } // namespace http

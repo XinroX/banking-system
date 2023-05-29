@@ -5,6 +5,7 @@ namespace http {
 class IHTTPRequest {
 public:
     virtual void ConfigureRequest(const std::string&) = 0;
+    virtual ~IHTTPRequest(){}
 };
 
 } // namespace http
